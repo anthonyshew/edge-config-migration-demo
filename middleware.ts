@@ -5,10 +5,9 @@ import { NextResponse } from 'next/server';
 export const config = {
   matcher: [
     // Protect from directly accessing /future-app routes
-    '/future-app(.*)',
+    '/future-app/:path*',
     // Feature-flagged App Router pages
-    '/dashboard',
-    '/dashboard/(.*)',
+    '/dashboard/:path*',
     '/about',
     '/'
   ],
