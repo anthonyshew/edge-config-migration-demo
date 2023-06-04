@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function Page() {
+export default function Page() {
   return (
     <main className="flex flex-col items-center justify-between min-h-screen p-24 prose lg:prose-xl">
       <h1>App Router for the Dashboard!</h1>
@@ -9,5 +9,3 @@ export function Page() {
     </main>
   );
 }
-
-export default Page;
